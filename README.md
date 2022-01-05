@@ -1,4 +1,4 @@
-# tika-document-ingest
+# Tika Document Ingest
 Objective: Ingest libs for pulling/pushing docs from some dir or database, extracting basic text and metadata and forwarding that data into ELK.
 
 ## NIFI DOCUMENTATION
@@ -66,30 +66,30 @@ Objective: Ingest libs for pulling/pushing docs from some dir or database, extra
 
 ## ELK STACK DOCUMENTATION
 
-#### Notes
+#### NOTES
 1. "ELK" stands for ElasticSearch, LogStash, and Kibana / ElatisSearch = Data Store | LogStash = ? | Kibana = Data Visualization
 2. Prerequisites for properly utilizing this stack is having Docker up and running on your system
 
-#### Download ELK stack
+#### DOWNLOAD ELK STACK
 1. Download the "security-tweaks" branch of this docker-ELK fork: https://github.com/UMD-ARLIS/docker-elk
 2. Extract the "docker-elk-security-tweaks" folder
 
-#### Run instance of ELK stack
-2. Navigate to the "docker-compose.yml" file inside of the extracted folder
-3. Right click in the folder and click "Open in Windows Terminal"
-4. Use the "docker compose up" command to start an instance of ELK stack
+#### RUN INSTANCE OF ELK STACK
+1. Navigate to the "docker-compose.yml" file inside of the extracted folder
+2. Right click in the folder and click "Open in Windows Terminal"
+3. Use the "docker compose up" command to start an instance of ELK stack
 
-#### Setup instance of ELK stack
-5. Once ELK stack is running successfully, run the workflow in Nifi and send data to the ELK stack
-6. Access ELK stack through a browser (Microsoft Edge works well) and click on the three horizontal lines at the top left. At this moment you will be entering ElasticSearch.
-7. Once inside ElasticSearch, scroll down to the "Management" section and click on "Stack Management"
-8. Near the left edge of the page, click on "Index Patterns" under "Kibana"
-9. Click on the blue "Create index pattern" button
-10. Type "tikac*" into the box for "Index pattern name" and click "Next step"
-11. Click "file.creationTime" for the "Time field" box and click "Create index pattern"
-12. Repeat steps 8 to 11, using "tikam*" for the "Index pattern name" box in step 10
+#### SETUP INSTANCE OF ELK STACK
+1. Once ELK stack is running successfully, run the workflow in Nifi and send data to the ELK stack
+2. Access ELK stack through a browser (Microsoft Edge works well) and click on the three horizontal lines at the top left. At this moment you will be entering ElasticSearch.
+3. Once inside ElasticSearch, scroll down to the "Management" section and click on "Stack Management"
+4. Near the left edge of the page, click on "Index Patterns" under "Kibana"
+5. Click on the blue "Create index pattern" button
+6. Type "tikac*" into the box for "Index pattern name" and click "Next step"
+7. Click "file.creationTime" for the "Time field" box and click "Create index pattern"
+8. Repeat steps 8 to 11, using "tikam*" for the "Index pattern name" box in step 10
 
-#### View data in Kibana
-13. Click on the three horizontal lines at the top left and click on "Discover" under the "Analytics" section 
-14. Change between the index patterns "tikac*" and "tikam*" by clicking on the index pattern dropdown above the field names near the left edge
-15. View the data within a specific range of time by filtering the time at the top right or by clicking on the green bars of data 
+#### VIEW DATA IN KIBANA
+1. Click on the three horizontal lines at the top left and click on "Discover" under the "Analytics" section 
+2. Change between the index patterns "tikac*" and "tikam*" by clicking on the index pattern dropdown above the field names near the left edge
+3. View the data within a specific range of time by filtering the time at the top right or by clicking on the green bars of data 
