@@ -27,7 +27,7 @@ Objective: Ingest libs for pulling/pushing docs from some dir or database, extra
 
 3. Go to the following URL – https://localhost:8443/nifi/  to check if the NiFi has started. Your port might be different. Don’t worry if this URL is not loading instantly. NiFi takes time after starting, just check periodically every few minutes.
 
-4. ***Once the folders are created***, you can check the URL. If you see a warning message stating that “your connection is not private”, click on “Advanced” and then click on “Proceed to (host number)”.
+4. If you see a warning message stating that “your connection is not private” in the URL, click on “Advanced” and then click on “Proceed to (host number)”.
 
 #### USERNAME AND PASSWORD 
 
@@ -38,9 +38,13 @@ Objective: Ingest libs for pulling/pushing docs from some dir or database, extra
 
 #### INSTALL TEMPLATE
 
-1. Once you are on the NIFI platform, your canvas should be empty. If not, this is okay. Holding down the shift key, use the mouse to select the canvas you see. Then, once the canvas is selected, right click your mouse while the cursor is on the template and press “delete”.
+1. Once you are logged into the NiFi page, you should see a blank canvas. If not, this is okay. Holding down the shift key, use the mouse to select the canvas you see. Then, once the canvas is selected, right click your mouse while the cursor is on the template and press “delete”.
 
-2. Now that your canvas is clean, right click an empty space on the canvas and press “Upload Template”. From here, press “Select Template” and choose the NIFI template you have downloaded from our GitHub repository.
+2. From this repository, download the "NiFi_Template_Final.xml" file.
+
+3. Navigate back to the NiFi page and right click an empty space on the canvas. In the dropdown, click “Upload Template” and then click “Select Template” in the popup screen. Choose the "NiFi_Template_Final.xml" file you have downloaded and click "Upload". 
+
+4. Once the template is successfully imported, you can drag the "Template" button at the top into the blank canvas and let go. This will show a popup screen where you can choose a template. Select the "NiFi Template Final" template and click "Add". 
 
 #### SET UP DATA TO INGEST 
 
