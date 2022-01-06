@@ -1,3 +1,5 @@
+[![Gitter](https://badges.gitter.im/ARLIS-NLPipeline/community.svg)](https://gitter.im/ARLIS-NLPipeline/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
 # Documentation
 Objective: Ingest libs for pulling/pushing docs from some dir or database, extracting basic text and metadata and forwarding that data into ELK.
 
