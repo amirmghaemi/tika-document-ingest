@@ -30,11 +30,11 @@ This section will allow a user to run the entire pipeline, once they have succes
     B. Right-click in the folder and click "Open in Windows Terminal".
     
     C. Use the "docker compose up" command in your terminal to start an instance of ELK stack.
-    
-    D. Once it is running, you can access elasticsearch by pasting the URL http://localhost:5601 into your web browser.
     ```
     docker compose up
     ```
+    
+    D. Once it is running, you can access elasticsearch by pasting the URL http://localhost:5601 into your web browser.
 
 ## TABLE OF CONTENTS
 
