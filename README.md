@@ -15,11 +15,26 @@ This section will allow a user to run the entire pipeline, once they have succes
 
 4. Once you are successfully logged into NIFI, you now have full access to the platform.
 
-#### ACCESS ELK
+#### ACCESS ELK (THROUGH DOCKER DESKTOP)
 
-1. Open Docker Desktop, navigate to the containers/apps section, and press “start” on the “docker security tweaks” container. 
+1. In Docker Desktop:
 
-2. Once this container and its processes have run, you can access elasticsearch by pasting the URL http://localhost:5601 into your web browser.
+    A. Open Docker Desktop, navigate to the containers/apps section, and press “start” on the “docker security tweaks” container. 
+    
+    B. Once it is running, you can access elasticsearch by pasting the URL http://localhost:5601 into your web browser.
+  
+2. In Command Line:
+    
+    A. Navigate to the "docker-compose.yml" file inside of the "docker-elk-security-tweaks" folder.
+
+    B. Right-click in the folder and click "Open in Windows Terminal".
+    
+    C. Use the "docker compose up" command in your terminal to start an instance of ELK stack.
+    
+    D. Once it is running, you can access elasticsearch by pasting the URL http://localhost:5601 into your web browser.
+    ```
+    docker compose up
+    ```
 
 ## TABLE OF CONTENTS
 
@@ -100,11 +115,13 @@ This section will allow a user to run the entire pipeline, once they have succes
 
     <img src="resources/nifi_command_line.png" width="600"/>
 
-3. Go to the following URL – https://localhost:8443/nifi/  to check if the NiFi has started. Your port might be different. Don’t worry if this URL is not loading instantly. NiFi takes time after starting, just check periodically every few minutes.
+3. Go to the following URL – https://localhost:8443/nifi/ to check if NiFi has started. Don’t worry if this URL is not loading instantly. NiFi takes time after starting, just check periodically every few minutes.
 
     ![alt text](resources/nifi_access_url.png)
+    
+    The picture above shows the URL in Google Chrome.
 
-4. If you see a warning message stating that “Your connection is not private” in the URL, click on “Advanced” and then click on “Proceed to (host number)”. This message might appear due to the lack of the webpage being HTTPS, this is expected - access the webpage anyways.
+4. If you see a warning message stating that “Your connection is not private” in the URL, click on “Advanced” and then click on “Proceed to localhost(unsafe)”. This message might appear due to the lack of the webpage being HTTPS, this is expected - access the webpage anyways.
 
 <a name="username_and_password"></a>
 #### USERNAME AND PASSWORD 
@@ -113,7 +130,7 @@ This section will allow a user to run the entire pipeline, once they have succes
 
     <img src="resources/nifi_username_password.png" width="350"/>
 
-2. Open the “nifi-app.log” file and use Ctrl+F to search for the keywords “username” or “password”. Once you have these credentials, go to the URL where NiFi is running and enter the details.
+2. Open the “nifi-app.log” file and use Ctrl+F to search for the keywords “username” or “password”. Once you have these credentials, go to the URL where NiFi is running and log in.
 
     ![alt text](resources/nifi_nifi_app_log_file.png)
 
@@ -158,7 +175,7 @@ This section will allow a user to run the entire pipeline, once they have succes
 <a name="run_the_template"></a>
 #### RUN THE TEMPLATE 
 
-**Note: Make sure that you have a backup of the files in your input folder. Each NiFi run will delete ALL files in the input folder you created.**
+**Note: Make sure that you have a backup of the files in your input folder. Each NiFi run *WILL DELETE ALL FILES* in the input folder you created.**
 
 1. Now you are all set! Now, to run NIFI and all of the processor groups. If you would like to run NiFi and all of its processors we have created, look at the bottom left of your NIFI app inside of the static solid white/gray colored bar. Make sure you are on the NIFI FLOW page and not inside of any of the processor groups. An easy way to confirm this is to look at your canvas, you should see all three processor groups, if you do then proceed. If you do not, simply press the NiFi FLOW text at the bottom of the screen and you will be navigated to the main page showing all of the processors. 
 
