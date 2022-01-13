@@ -15,7 +15,7 @@ This section will allow a user to run the entire pipeline, once they have succes
 
 4. Once you are successfully logged into NIFI, you now have full access to the platform.
 
-#### ACCESS ELK (THROUGH DOCKER DESKTOP)
+#### ACCESS ELK
 
 1. In Docker Desktop:
 
