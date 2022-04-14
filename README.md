@@ -254,7 +254,7 @@ docker compose up
 
     <img src="resources/elk_stack_create_tikac.png" width="550"/>
 
-5. Click "file.creationTime" for the "Time field" box and click "Create index pattern"
+5. Click "file.lastAccessTime" for the "Time field" box and click "Create index pattern"
 
     <img src="resources/elk_stack_select_time_field.png" width="550"/>
 
