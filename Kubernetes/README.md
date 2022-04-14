@@ -21,7 +21,7 @@ helm install nifi . --namespace nifi --create-namespace --wait
 
 ## Access Nifi
 ```
-kubectl port-forward -n nifi1 svc/nifi 8443:8443
+kubectl port-forward -n nifi svc/nifi 8443:8443
 ```
 
 ## Login
