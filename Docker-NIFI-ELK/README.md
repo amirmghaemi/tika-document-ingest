@@ -29,11 +29,11 @@ The test files are already in "\Docker-NIFI-ELK\nifi\flowfile_repository\nifi_in
 1. Open Docker Desktop
 2. Make sure docker-nifi-elk stack is running
 3. Open Command Prompt
-4. Run "docker ps"
+4. Run ```docker ps```
 5. Get the Container ID of nifi-container-persistent
-6. Run "docker exec -u 0 -it <container_id> /bin/bash" - should see "root" now
-7. Run "apt-get update" in the root terminal
-8. Run "apt-get install -y python3" & check by running the "python3" command
+6. Run ```docker exec -u 0 -it <container_id> /bin/bash``` - should see "root" now
+7. Run ```apt-get update``` in the root terminal
+8. Run ```apt-get install -y python3``` & check by running the ```python3``` command
 9. Place the python file in an appropriate path (in our case, we used the /nifi/flowfile_repository folder)
 
 
