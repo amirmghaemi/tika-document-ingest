@@ -25,6 +25,17 @@ Run the following command in this folder:
 
 ## NIFI Setup
 The test files are already in "\Docker-NIFI-ELK\nifi\flowfile_repository\nifi_input" folder but will be deleted after the first time the Nifi pipeline is run. Please make sure to create a copy of it on your local machine for more than one run. Copying and pasting the local copy of the test files into the nifi_input folder will be enough to set up the Nifi pipeline before running it.
+#### Install Python on Nifi
+1. Open Docker Desktop
+2. Make sure docker-nifi-elk stack is running
+3. Open Command Prompt
+4. Run "docker ps"
+5. Get the Container ID of nifi-container-persistent
+6. Run "docker exec -u 0 -it <container_id> /bin/bash" - should see "root" now
+7. Run "apt-get update" in the root terminal
+8. Run "apt-get install -y python3" & check by running the "python3" command
+9. Place the python file in an appropriate path (in our case, we used the /nifi/flowfile_repository folder)
+
 
 ## ELK Setup
 For the first time we run ELK, we will need to create index patterns. This has to be done after the Nifi workflow has been run at least once. To create the index patterns,
