@@ -157,8 +157,6 @@ This section will allow a user to run the entire pipeline, once they have succes
 
 1. In order to run the template, you will first need to create a new folder on your computer containing the various files you would like NIFI to ingest. An example of this is the folder called “nifi input” I created on my system. This folder can contain any file type, just make sure it has all of the files that you would like NIFI to take in. Also, it is important to note that any files in this folder **WILL BE DELETED** when Nifi is run. The location of this folder on my system is “C:\Users\Kymani\Documents\nifi input”. 
 
-How to keep files and not have NIFI delete them on run?: In NIFI, double click the "Get File & Convert to JSON" processor group, then double click the "Get File" processor, navigate to properties, on the "keep source file" field - select true. Then click apply.
-
    ![alt text](resources/nifi_nifi_input_folder.png)
 
 2. After you have created a folder on your system, put in [these](https://drive.google.com/file/d/1KCQ6QG7xePpCYB5dcV6sUBu-V2jVrVRv/view?usp=sharing) test files for NIFI to ingest. Then go back to the NIFI app on your browser.
