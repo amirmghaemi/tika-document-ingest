@@ -182,7 +182,7 @@ How to keep files and not have NIFI delete them on run?: In NIFI, double click t
 
     <img src="resources/nifi_nifi_flow.png" width="500"/>
 
-2. After confirming you are on the main page showing all three processor groups, simply right-click your mouse on a black space of the canvas and press “Start” and NIFI will begin running the processes. In order for the pipeline to run correctly, make sure you have ELASTICSEARCH accessible and DOCKER running. 
+2. After confirming you are on the main page showing all three processor groups, simply right-click your mouse on a blank space of the canvas and press “Start” and NIFI will begin running the processes. In order for the pipeline to run correctly, make sure you have ELASTICSEARCH accessible and DOCKER running. 
 Note: To watch your files populate in real time, right click on the canvas and press "Refresh".
     
    <img src="resources/nifi_run_flow.png" width="500"/>
