@@ -106,7 +106,7 @@ This section will allow a user to run the entire pipeline, once they have succes
 <a name="start_nifi"></a>
 #### START NIFI 
 
-1. To start the NiFi, you can directly double-click on the “run-nifi.bat” file in the nifi-1.14.0 -> bin folder. 
+1. To start NiFi, you can directly double-click on the “run-nifi.bat” file in the nifi-1.14.0 -> bin folder. 
 
     ![alt text](resources/nifi_run_nifi_bat.png)
 
@@ -142,7 +142,7 @@ This section will allow a user to run the entire pipeline, once they have succes
 
     <img src="resources/nifi_delete_canvas.png" width="450"/>
 
-2. From our tika-document-ingest page, use the "NiFi_Template_Final.xml" file. You need to download the repo zip and extract the nifi template ot use access it. 
+2. From our tika-document-ingest page, use the "NiFi_Template_Final.xml" file. You need to download the repo zip and extract the nifi template to access it. 
 
 3. Navigate back to the NiFi page and right-click an empty space on the canvas. In the dropdown, click “Upload Template” and then click “Select Template” on the popup screen. Choose the "NiFi_Template_Final.xml" file you have downloaded and click "Upload".
 
