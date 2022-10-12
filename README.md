@@ -159,7 +159,7 @@ This section will allow a user to run the entire pipeline, once they have succes
 
 How to keep files and not have NIFI delete them on run?: In NIFI, double click the "Get File & Convert to JSON" processor group, then double click the "Get File" processor, navigate to properties, on the "keep source file" field - select true. Then click apply.
 
-    ![alt text](resources/nifi_nifi_input_folder.png)
+   ![alt text](resources/nifi_nifi_input_folder.png)
 
 2. After you have created a folder on your system and put in the files you would like NIFI to ingest, go back to the NIFI app on your browser. 
 
