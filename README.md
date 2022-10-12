@@ -251,7 +251,7 @@ The input folder for this run (screenshot) contained 1,040 files.
 
     <img src="resources/elk_stack_select_time_field.png" width="550"/>
 
-6. Repeat steps 8 to 11, using "tikam*" for the "Index pattern name" box in step 10
+6. Repeat steps 4 and 5, using "tikam*" for the "Index pattern name" box in step 10
 
     <img src="resources/elk_stack_create_tikam.png" width="550"/>
 
