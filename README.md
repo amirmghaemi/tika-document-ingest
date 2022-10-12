@@ -210,25 +210,15 @@ The input folder for this run (screenshot) contained 1,040 files.
 
     <img src="resources/elk_stack_github.png" width="500"/>
     
-2. Extract the "docker-elk-security-tweaks" folder 
+2. Extract the "docker-elk-security-tweaks" folder to the same global directory nifi is in 
 
     <img src="resources/elk_stack_extract.png" width="380"/>
 
 <a name="run_instance_of_elk_stack"></a>
 #### RUN INSTANCE OF ELK STACK
 
-1. Navigate to the "docker-compose.yml" file inside of the extracted folder
+1. Go to terminal. cd into the folder the docker-elk-security-tweaks folder is in, and run docker compose up to start the ELK stack
 
-    <img src="resources/elk_stack_docker_compose_yml.png" width="400"/>
-
-2. Right-click in the folder and click "Open in Windows Terminal"
-
-    <img src="resources/elk_stack_windows_terminal.png" width="400"/>
-
-3. Use the "docker compose up" command in your terminal to start an instance of ELK stack
-```
-docker compose up
-```
 <a name="access_elk_stack"></a>
 #### ACCESS ELK STACK
 
