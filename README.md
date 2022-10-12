@@ -76,7 +76,7 @@ This section will allow a user to run the entire pipeline, once they have succes
 <a name="install_nifi"></a>
 #### INSTALL NIFI 
 
-1. Before beginning, make sure your device has JDK 8 installed and operational
+1. Before beginning, make sure your device has JAVA 8 installed and operational
 
     <img src="resources/nifi_java.png" width="300"/>
     
