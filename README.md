@@ -219,6 +219,7 @@ The input folder for this run (screenshot) contained 1,040 files.
 
 1. Go to terminal. cd into the folder the docker-elk-security-tweaks folder is in, and run docker compose up to start the ELK stack
 
+    <img src="resources/prompt.png" width="380"/>
 <a name="access_elk_stack"></a>
 #### ACCESS ELK STACK
 
