@@ -142,7 +142,7 @@ This section will allow a user to run the entire pipeline, once they have succes
 
     <img src="resources/nifi_delete_canvas.png" width="450"/>
 
-2. From our repository, use the "NiFi_Template_Final.xml" file.
+2. From our tika-document-ingest page, use the "NiFi_Template_Final.xml" file. You need to download the repo zip and extract the nifi template ot use access it. 
 
 3. Navigate back to the NiFi page and right-click an empty space on the canvas. In the dropdown, click “Upload Template” and then click “Select Template” on the popup screen. Choose the "NiFi_Template_Final.xml" file you have downloaded and click "Upload".
 
