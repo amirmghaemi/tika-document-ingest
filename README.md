@@ -161,7 +161,7 @@ How to keep files and not have NIFI delete them on run?: In NIFI, double click t
 
    ![alt text](resources/nifi_nifi_input_folder.png)
 
-2. After you have created a folder on your system and put in the files you would like NIFI to ingest, go back to the NIFI app on your browser. Doanload the test data set here https://drive.google.com/file/d/1KCQ6QG7xePpCYB5dcV6sUBu-V2jVrVRv/view?usp=sharing
+2. After you have created a folder on your system, put in [these](https://drive.google.com/file/d/1KCQ6QG7xePpCYB5dcV6sUBu-V2jVrVRv/view?usp=sharing) test files for NIFI to ingest. Then go back to the NIFI app on your browser.
 
     ![alt text](resources/nifi_inside_nifi_input_folder.png)
 
